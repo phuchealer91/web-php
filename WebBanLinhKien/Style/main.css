@@ -1,0 +1,597 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#container {
+    width: 100%;
+}
+
+.dot {
+    width: 10px;
+    padding: 0 5px;
+}
+
+header {
+    background-color: #272E79;
+    height: 150px;
+}
+
+    header div {
+        float: left;
+    }
+
+    header #logo {
+        width: 18%;
+        text-align: center;
+        background-color: #272E79;
+        height: 100px;
+        line-height: 100px;
+        border-radius: 10px 0 0 0;
+    }
+
+        header #logo img {
+            width: 150px;
+        }
+
+        header #logo h1 {
+            color: white;
+            margin-top: 0px;
+        }
+
+    header #flashHeader {
+        width: 60%;
+        height: 150px;
+    }
+
+        header #flashHeader img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .feildBasic {
+        border-radius: 10px;
+        padding: 5px;
+        background-color: white;
+        width: 90%;
+        margin: 10px;
+        color: white;
+    }
+
+    .feildBasic h4 {
+        background-color: #272E79;
+        margin-top: 0px;
+        width: 96%;
+        padding: 1%;
+        border-radius: 10px;
+         margin-bottom: 5px;
+         cursor: pointer;
+    }
+
+.clear {
+    clear: both;
+}
+
+nav {
+    background-color: #fcd89c;
+    width: 100%;
+}
+
+    nav .ddcolortabs {
+        padding-top: 15px;
+        padding-left: 15px;
+        height: 25px;
+
+    }
+    nav .ddcolortabs li
+    {
+        text-transform: none;
+    }
+    nav .ddcolortabs a
+    {
+        border-top:2px solid rgb(27, 85, 119);
+        border-left:2px solid rgb(27, 85, 119);
+        border-right:2px solid rgb(27, 85, 119);
+        border-radius: 5px 5px 0 0;
+        margin-right:3px;
+
+    }
+
+
+article {
+    width: 73%;
+    float: left;
+}
+
+    article .feildContent
+    {
+        background-color: #FEFEFE;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #272E79;
+    }
+    article .feildContent h2
+    {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 5px;
+        margin-left:0px;
+        color:#d98f00;
+    } article .feildContent h3
+    {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px;
+        color:#d98f00;
+    }
+      .feildContent #noidung{
+          margin: 6px auto;
+          border: 1px solid #ccc;
+          resize: none;
+      }
+    article #noidung p.ndp
+    {
+        padding: 0;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px;
+        color:#272E79;
+    }
+
+    article #spBanMoi {
+
+        height: fit-content;
+    }
+
+
+
+    article #spBanChay #hienThiSP {
+        width: 100%;
+		overflow-x:auto;
+    }
+
+#hienThiSPBC {
+    margin-top: 10px;
+}
+
+#hienThiSPMoi {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height:650px;
+    overflow: auto;
+}
+
+/*#hienThiSPBC .single-products {*/
+/*    margin-right: 20px;*/
+/*}*/
+
+#hienThiSPMoi .single-products {
+    margin: 4px;
+
+}
+/**/
+#hienThiSPMoi2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height:650px;
+    overflow: auto;
+}
+
+#hienThiSPMoi2 .sanPham {
+    margin: 4px;
+
+}
+/**/
+
+.sanPham {
+    border: 4px solid #272E79;
+    width:220px;
+    margin: 0 4px 0 5px;
+	position: relative;
+}
+
+    .sanPham .thongTinSp {
+        background-color: #2c2e96;
+        color: #3A6076;
+        text-align: center;
+        padding: 5px;
+        height: 50px;
+        overflow-x: auto;
+        font-size: 13px;
+    }
+
+    .sanPham img {
+        object-fit: fill;
+        width: 100%;
+        height: 150px;
+        text-align: center;
+    }
+
+    .sanPham .Gia {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 10px 0;
+    }
+    .sanPham a
+    {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .sanPham a:hover{
+        color: #ff284e;
+    }
+
+/*hover*/
+
+
+.single-products {
+	border: 4px solid #272E79;
+    width: 220px;
+	height:100%;
+    float: left;
+    margin: 0 4px 0 5px;
+  	position: relative;
+}
+
+.productinfo .gia{
+    font-weight: bold;
+	width: 100%;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.product-overlay .gia{
+	color: #fff;
+	width: 100%;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+
+.productinfo .thongTinSanPham{
+  background-color: #2c2e96;
+  color: #4af4ee;
+  text-align: center;
+  padding: 5px;
+  height: 50px;
+  font-size: 13px;
+
+}
+.thongTinSanPham a{
+    font-size: 16px;
+    color: white;
+
+}.thongTinSanPham a:hover{
+    color: #ff284e;
+}
+
+.productinfo img{
+    object-fit: fill;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+
+.productinfo{
+ position:relative;
+}
+
+.product-overlay {
+	overflow-x: auto;
+  background:#272E79;
+  top: 0;
+  display: none;
+  height: 0;
+  position: absolute;
+  transition: height 500ms ease 0s;
+  width: 100%;
+  display: block;
+}
+
+/*.single-products:hover .product-overlay {*/
+/*  display:block;*/
+/*  height:100%;*/
+/*}*/
+
+
+/*.product-overlay .overlay-content {*/
+/*  bottom: 0;*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  text-align: center;*/
+/*  width: 100%;*/
+/*}*/
+
+/*.product-overlay .thongTinSanPham{*/
+/*  background-color: #f9d7a9;*/
+/*  color: #fff;*/
+/*  text-align: center;*/
+/*  padding: 5px;*/
+/*  height:150px;*/
+/*  overflow-x: auto;*/
+/*  font-size: 13px;*/
+/*}*/
+
+/*hover*/
+
+aside {
+    float: right;
+    width: 27%;
+}
+
+
+    aside .feildBasic {
+        background-color: #f6dff9;
+        border: 2px solid #272E79;
+        margin: 10px 0 0 0;
+        }
+#ListProductTitle {
+    padding: 5px;
+    margin: 0px;
+}
+    .titleProduct  {
+        border: 2px solid #272E79;
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 1px;
+        border-radius: 2px;
+        cursor: pointer;
+        color: black;
+    }
+    .titleProduct:hover
+    {
+        background-color: white;
+    }
+
+a {
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
+    transition: .3s;
+}
+#ListProductTitle a:hover{
+    color: #272E79;
+}
+.ListProduct {
+    background-color: white;
+    padding: 20px;
+}
+.ListProduct li {
+    padding: 5px 5px 5px 0;
+}
+
+
+
+    #btnSearch
+    {
+        width: 25px;
+        height: 22px;
+        border: none;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    #textSearch
+    {
+        width:180px;
+    }
+    .btn
+    {
+        border-radius: 4px;
+        background-color: #272E79;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        color:white;
+    }
+    .btn:hover
+    {
+        background-color:rgb(39, 169, 230);
+        text-decoration: none;
+    }
+    #truyCap td
+    {
+        width:70px;
+        padding:5px;
+    }
+
+    #username:hover span
+    {
+        background-color: none;
+    }
+    #noiDungTinTuc table td img
+    {
+        width: 100px;
+        margin-top:10px;
+    }
+     #noiDungTinTuc table td
+     {
+        padding-top: 10px;
+     }
+/*footer*/
+.footer-distributed{
+    background: #272E79;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font-family: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #2935a7;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #2a65a7;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
